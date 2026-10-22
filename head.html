@@ -4,6 +4,19 @@
   move-to-http-header="true"
 />
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- Hubspot  Chat Widget simulator placed synchronously in <head> -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/1234567.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+<script>
+  // Lock the main thread for 3 seconds before the page can paint
+  const start = Date.now();
+  while (Date.now() - start < 3000) {
+    // Burning CPU cycles
+  }
+</script>
+
+<script nonce="aem" src="/scripts/aem.js" type="module"></script>
 <script nonce="aem" src="/scripts/aem.js" type="module"></script>
 <script nonce="aem" src="/scripts/scripts.js" type="module"></script>
 <link rel="stylesheet" href="/styles/styles.css"/>

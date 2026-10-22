@@ -160,6 +160,10 @@ export function decorateMain(main) {
  * @param {Element} doc The container element
  */
 async function loadEager(doc) {
+  const start = Date.now();
+  while (Date.now() - start < 3000) {
+    // Artificial heavy work: freezes the browser for 3 seconds
+  }
   document.documentElement.lang = 'en';
   decorateTemplateAndTheme();
   const main = doc.querySelector('main');
